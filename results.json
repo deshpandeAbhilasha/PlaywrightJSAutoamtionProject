@@ -1,0 +1,122 @@
+{
+  "config": {
+    "configFile": "D:\\Learning\\PlayWrightAutomation\\playwright.config.js",
+    "rootDir": "D:/Learning/PlayWrightAutomation/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "D:\\Learning\\PlayWrightAutomation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Learning/PlayWrightAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "D:/Learning/PlayWrightAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.50.0",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "MMT_Scenario1.spec.js",
+      "file": "MMT_Scenario1.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Book hourly based cab using PO",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 17239,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Indica, Swift\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-29T08:57:58.488Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Learning\\PlayWrightAutomation\\test-results\\MMT_Scenario1-Book-hourly-based-cab-using-PO-chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "002e037e7a9a44025f0e-b4c604a43f8229d2d9b0",
+          "file": "MMT_Scenario1.spec.js",
+          "line": 92,
+          "column": 12
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-01-29T08:57:57.597Z",
+    "duration": 18826.743,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
