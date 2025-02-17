@@ -52,7 +52,7 @@ const config = {
     ]
    
     
-    ,reporter : [['allure-playwright'], ['json'] , ['html']],
+    ,reporter : 'html',
     workers : 5
     
     
