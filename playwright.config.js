@@ -18,7 +18,7 @@ const config = {
         {
         
           browserName : 'chromium',
-          headless : false,
+          headless : true,
           screenshot : 'on',
          // viewport : {width: 1200 , height : 1500},
          // ...devices['Nokia N9 landscape'],
@@ -45,7 +45,7 @@ const config = {
         {
         
           browserName : 'webkit',
-          headless : false,
+          headless : true,
           screenshot : 'off'
         },
       }
