@@ -1,5 +1,7 @@
+FROM node:18
+
 # Use the official Playwright image with dependencies pre-installed
-FROM mcr.microsoft.com/playwright:v1.42.0
+FROM mcr.microsoft.com/playwright:v1.50.0-jammy 
 
 # Set the working directory
 WORKDIR /app

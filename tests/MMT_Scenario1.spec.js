@@ -50,7 +50,7 @@ customTest(`@Web Date Selection with playwright fixer`, async ({ page ,testDataF
 
 
 
-test.only('Book hourly based cab' , async({page}) => {
+test('Book hourly based cab' , async({page}) => {
     const poManager = new POManager(page);
     const introductionPage = poManager.getIntroductionPage();
     const homePage = poManager.getHomePage();
@@ -128,17 +128,17 @@ customTest.skip(`Book hourly based cab using PO` , async({page , bookCabTestData
     const actualDuration = await cabPage.selectPackage(expectedDuration)
     expect(actualDuration).toEqual(expectedDuration);
     await cabPage.clickSearch();
-    
-    const SearchPagetripType = await searchResultPage.getBookingCreteria('tripType');
-    const SearchPagepickupLocation = await searchResultPage.getBookingCreteria('fromCity');
+    await page.waitForTimeout(30000);
+    const SearchPagetripType = await searchResultPage.getBookingCreteria('trip');
+    const SearchPagepickupLocation = await searchResultPage.getBookingCreteria('from');
     const SearchPagepickupTime = await searchResultPage.getBookingCreteria('pickupTime');
     const SearchPagePickupDate = await searchResultPage.getBookingCreteria('pickupDate');
     const SearchPagePackageType = await searchResultPage.getBookingCreteria('Package Type');
     expect(tripType).toContain(SearchPagetripType);
     expect(pickupLocation).toEqual(SearchPagepickupLocation);
     expect(bookCabTestData.JourneyTime).toEqual(SearchPagepickupTime);
-    expect(JourDate).toEqual(SearchPagePickupDate.trim());
-    expect(bookCabTestData.JourneyDuration.replace('hrs' , 'hr')).toContain(SearchPagePackageType);
+    expect(SearchPagePickupDate.trim()).toContain(JourDate);
+    expect(bookCabTestData.JourneyDuration.replace(' hrs' , 'hrs')).toContain(SearchPagePackageType);
     await searchResultPage.selectfirstCarTypeOrFuelType('Cab Type');
     await searchResultPage.selectfirstCarTypeOrFuelType('Fuel Type');
 

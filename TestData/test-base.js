@@ -13,7 +13,7 @@ exports.customTest = base.test.extend(
     {
         fromCity : "Pune",
         pickupLocation : "Pune Junction Railway Station, Agarkar Nagar, Pune, Maharashtra, India",
-        JourneyDate : "23/February/2025",
+        JourneyDate : "23/March/2025",
         JourneyTime : "04:45 PM",
         JourneyDuration : "6 hrs 60 kms"
     }
