@@ -91,7 +91,6 @@ test('Book hourly based cab' , async({page}) => {
 
 });
 
-
 customTest.skip(`Book hourly based cab using PO` , async({page , bookCabTestData}) => {
     const poManager = new POManager(page);
     const introductionPage = poManager.getIntroductionPage();
