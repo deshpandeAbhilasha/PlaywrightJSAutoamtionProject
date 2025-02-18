@@ -12,22 +12,22 @@ const config = {
     retries : 2,
     projects : 
     [
-       {
-         name : 'chrome',
-        use : 
-        {
+      //  {
+      //    name : 'chrome',
+      //   use : 
+      //   {
         
-          browserName : 'chromium',
-          headless : true,
-          screenshot : 'on',
-         // viewport : {width: 1200 , height : 1500},
-         // ...devices['Nokia N9 landscape'],
-          ignoreHttpsError : true,
-         // video: 'on'
-         video : 'retain-on-failure',
-         trace : 'on'
-        },
-      },
+      //     browserName : 'chromium',
+      //     headless : true,
+      //     screenshot : 'on',
+      //    // viewport : {width: 1200 , height : 1500},
+      //    // ...devices['Nokia N9 landscape'],
+      //    // ignoreHttpsError : true,
+      //    // video: 'on'
+      //    video : 'retain-on-failure',
+      //    trace : 'on'
+      //   },
+      // },
 
     //    {
     //      name : 'firefox',
